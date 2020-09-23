@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro%}
+
+<!-- styles block -->
+
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+{% endblock %}
+<!-- Content block -->
+{% block content %}
+<style>
+        .overlay-wrapper {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 92vh;
+                overflow-x: hidden;
+                background-color: black;
+                opacity: 0.6;
+        }
+
+        #index .container-fluid {
+                overflow-x: hidden;
+        }
+
+        .overlay {
+                overflow: hidden;
+                position: absolute;
+                top: 40%;
+                text-align: center;
+                /* left: 30%; */
+                /* margin-left: auto;
+                margin-right: auto; */
+        }
+        /* background-image{
+                size: cover;
+                height: 100vh;
+        } */
+</style>
+<div
+        style="background-image: url('https://images.unsplash.com/photo-1556711905-4bd1b6603275?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60'); background-repeat: no-repeat; background-size: cover; height: 100vh;">
+        <section id="index" class="p-0 m-0">
+                <div class="overlay-wrapper m-auto">
+
+                        <div class="overlay w-75 m-auto">
+
+                                <div class="card m-2">
+                                        <div class="card-body">
+                                                <h1>Life is a first impression. You get one shot at it. Make it
+                                                        everlasting.</h1>
+                                                </h3>
+
+                                        </div>
+
+                                </div>
+                                <div class="card">
+                                        <div class="card-body">
+                                                <h3>“Don't pretend to be what you're not, instead, pretend to what you want to be, it is not pretence, it is a journey to self realization.”
+                                                        ― Michael Bassey Johnson
+                                                </h3>
+
+                                        </div>
+
+                                </div>
+
+                        </div>
+                </div>
+
+        </section>
+</div>
+
+{% endblock%}
