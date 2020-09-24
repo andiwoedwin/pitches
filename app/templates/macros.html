@@ -49,7 +49,7 @@
             <a style="font-size: 20px;" href="{{url_for('main.upvote',pitch_id = pitch.id)}}" class= "btn btn-warning btn-sm">Upvote <span>{{pitch.upvotes.count()}}</span></a>
             <a style="font-size: 20px;" href="{{url_for('main.downvote',pitch_id = pitch.id)}}" class= "btn btn-danger btn-sm">Downvote <span>{{pitch.downvotes.count()}}</span></a>&nbsp;&nbsp;|
             <a style="font-size: 20px;" href="{{url_for('main.view_comments',id=pitch.id)}}">View Comments</a>&nbsp;&nbsp;
-            <!-- <a href="{{url_for('main.new_comment',id=pitch.id)}}">Vote</a> -->
+            
         </div>
     {% endif%}
   {% endfor %}
