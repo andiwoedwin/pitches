@@ -52,6 +52,7 @@ This is a project that enable users to get access to various pitches and allow t
 6.Run  ./start.sh to launch the program and login to pitch website where people share different views through their pitches.
 
 ## Live Link
+https://andiwo-pitch.herokuapp.com/
 
 
 ## Technologies Used
